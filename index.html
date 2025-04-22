@@ -1,50 +1,59 @@
+<!-- Estrutura de pastas sugerida:
+/
+├── index.html
+├── feminino.html
+├── masculino.html
+├── css/
+│   └── style.css
+├── js/
+│   └── script.js
+├── img/
+│   ├── foto1.png
+│   ├── foto2.png
+│   ├── ...
+├── pdf/
+│   └── (PDFs gerados, se quiser armazenar)
+-->
+
+<!-- index.html (atualizado com meta description e melhorias de acessibilidade/SEO) -->
+<!DOCTYPE html>
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="Farmacêutica Gilcy Kelly - Especialista em prescrição e manipulação funcional. Atendimento humanizado com foco na saúde da mulher e do homem." />
   <title>Gilcy Kelly | Farmacêutica Funcional 🩷</title>
-  <link rel="stylesheet" href="css/style.css">
-       <!-- Swiper CSS -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 </head>
 <body class="dark-theme-portfolio">
   <div class="portfolio-container">
+    <!-- SLIDER com alt descritivo -->
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="img/foto1.png" alt="Dra. Gilcy Kelly em atendimento clínico"></div>
+        <div class="swiper-slide"><img src="img/foto2.png" alt="Medicamentos manipulados na clínica"></div>
+        <div class="swiper-slide"><img src="img/foto3.png" alt="Receituário funcional personalizado"></div>
+        <div class="swiper-slide"><img src="img/foto4.png" alt="Ambiente acolhedor da clínica"></div>
+      </div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
 
-
-<!-- SLIDER -->
-<div class="swiper">
-  <div class="swiper-wrapper">
-    <div class="swiper-slide"><img src="img/foto1.png" alt="Slide 1"></div>
-    <div class="swiper-slide"><img src="img/foto2.png" alt="Slide 2"></div>
-    <div class="swiper-slide"><img src="img/foto3.png" alt="Slide 3"></div>
-    <div class="swiper-slide"><img src="img/foto4.png" alt="Slide 4"></div>
-  </div>
-  <div class="swiper-pagination"></div>
-  <div class="swiper-button-prev"></div>
-  <div class="swiper-button-next"></div>
-</div>
-
-
-<section class="sobre-lado-a-lado">
-  <div class="foto-lado">
-    <img src="img/foto.jpg" alt="Gilcy Kelly">
-  </div>
-  <div class="texto-lado">
-    <h2>Sobre mim</h2>
-    <p>Olá! Eu sou a <span class="destaque-rosa">Dra. Gilcy Kelly dos Santos Rodrigues</span>, farmacêutica apaixonada pela promoção da saúde e pelo cuidado integral ao paciente.
-        Formada pela <strong>Faculdade Unida de Campinas (FacUnicamps)</strong>, atualmente em especialização na área de <strong>Prescrição Farmacêutica e Farmácia Clínica</strong>.
-      </p>
-      <p>
-        Atuo com enfoque funcional, clínico e manipulação personalizada, sempre comprometida com a segurança, eficácia e bem-estar individual. Tenho experiência em atenção farmacêutica, controle de qualidade, dispensação de medicamentos e um olhar empático para o cuidado humanizado.
-      </p>
-      <p>
-        Trabalho com base nas Boas Práticas de Fabricação (BPF) e na legislação sanitária vigente, propondo soluções que respeitam a individualidade de cada paciente. Acredito que a farmácia é uma ponte entre a ciência e o cuidado, capaz de transformar vidas com empatia, conhecimento e responsabilidade 💗
-      </p>
-      <p class="tagline"><strong>Farmacêutica Responsável<br>CRF-GO: 23545</strong></p> <!-- substitua pelo seu número real -->
+    <section class="sobre-lado-a-lado">
+      <div class="foto-lado">
+        <img src="img/foto.jpg" alt="Retrato da Dra. Gilcy Kelly sorrindo com jaleco branco">
+      </div>
+      <div class="texto-lado">
+        <h2>Sobre mim</h2>
+        <p>Olá! Eu sou a <span class="destaque-rosa">Dra. Gilcy Kelly dos Santos Rodrigues</span>, farmacêutica apaixonada pela promoção da saúde e pelo cuidado integral ao paciente.
+        Formada pela <strong>Faculdade Unida de Campinas (FacUnicamps)</strong>, atualmente em especialização na área de <strong>Prescrição Farmacêutica e Farmácia Clínica</strong>.</p>
+        <p>Atuo com enfoque funcional, clínico e manipulação personalizada, sempre comprometida com a segurança, eficácia e bem-estar individual. Tenho experiência em atenção farmacêutica, controle de qualidade, dispensação de medicamentos e um olhar empático para o cuidado humanizado.</p>
+        <p>Trabalho com base nas Boas Práticas de Fabricação (BPF) e na legislação sanitária vigente, propondo soluções que respeitam a individualidade de cada paciente. Acredito que a farmácia é uma ponte entre a ciência e o cuidado, capaz de transformar vidas com empatia, conhecimento e responsabilidade 💗</p>
+        <p class="tagline"><strong>Farmacêutica Responsável<br>CRF-GO: 23545</strong></p>
+      </div>
     </section>
-    
-      
 
     <section class="baixe"> 
       <h2>Baixe meu Currículo </h2>
@@ -57,79 +66,75 @@
       <a href="masculino.html" class="btn">🧔 Maridão Monstro</a>
     </section>
 
-   <!-- BREVE LANÇAMENTO DOS CURSOS - AREA DESTINADA PARA LINL UDEMY
-    <section class="questionarios">
-      <h2>Cursos</h2>
-      <a href="*" class="btn"></a>
-      <a href="*" class="btn"></a>
-      <a href="*" class="btn"></a>
-      <a href="*" class="btn"></a>
-      <a href="*" class="btn"></a>
-      <a href="*" class="btn"></a>-->
-    </section>
-
-
     <section class="services">
       <h2>Serviços</h2>
       <ul>
         <li>💊 Consultoria Farmacêutica</li>
         <li>🧪 Manipulação Personalizada</li>
         <li>📚 Palestras e Workshops</li>
-        <!--<li>🌱 Acompanhamento Nutricional</li>-->
       </ul>
     </section>
 
     <p>📍 Localização: Goiânia, GO</p>
     <p>🌐 Redes sociais:</p>
     <section class="social-buttons">
-          <!-- FACEBOOK -->
-          <!--<a href="https://www.facebook.com/kellyramos133/" target="_blank">
-            <img src="img/facebook-icon.png" alt="Facebook">
-          </a>-->
-          <!-- TIKTOK -->
-          <!--<a href="https://www.tiktok.com/@kellyramos133" target="_blank">
-            <img src="img/tiktok-icon.png" alt="TikTok">
-          </a>-->
-          <!-- YOUTUBE -->
-          <!--<a href="https://www.youtube.com/@kellyramos133" target="_blank">
-            <img src="img/youtube-icon.png" alt="YouTube">
-          </a>-->
-          <!-- PINTEREST -->
-          <!--<a href="https://www.pinterest.com/kellyramos133/" target="_blank">
-            <img src="img/pinterest-icon.png" alt="Pinterest">
-            </a>-->
-            <!-- INSTAGRAM -->
-          <a href="https://www.instagram.com/kellyramos133/" target="_blank">
-            <img src="img/instagram-icon.png" alt="Instagram">
-          </a>
-          <!-- LINKEDIN -->
-          <a href="https://www.linkedin.com/in/gilcykellyrodrigues/" target="_blank">
-            <img src="img/linkedin-icon.png" alt="LinkedIn">
-          </a>
-          <!-- WHATSAPP -->
-          <a href="whatsapp://5599999999999" target="_blank" class="whatsapp-float">
-            <img src="img/whatsapp-icon.png" alt="WhatsApp">
-          </a>
-          
+      <a href="https://www.instagram.com/kellyramos133/" target="_blank">
+        <img src="img/instagram-icon.png" alt="Instagram de Gilcy Kelly">
+      </a>
+      <a href="https://www.linkedin.com/in/gilcykellyrodrigues/" target="_blank">
+        <img src="img/linkedin-icon.png" alt="LinkedIn profissional da farmacêutica Gilcy Kelly">
+      </a>
+      <a href="https://api.whatsapp.com/send?phone=5599999999999&text=Ol%C3%A1%2C%20Dra.%20Gilcy%20Kelly!%20Acabei%20de%20preencher%20o%20formul%C3%A1rio%20e%20gostaria%20de%20conversar%20para%20um%20atendimento%20personalizado.%20Agrade%C3%A7o%20desde%20j%C3%A1%20pela%20aten%C3%A7%C3%A3o!" 
+      target="_blank" 
+      class="whatsapp-float" 
+      id="whatsapp-icon"
+      title="Fale com a Dra. Gilcy Kelly no WhatsApp 💬">
+     <img src="img/whatsapp-icon.png" alt="Contato WhatsApp com Gilcy Kelly">
+   </a>
+   
+   <div class="whatsapp-bubble" id="whatsapp-bubble">
+    <span>👋 Oi! Precisa de atendimento? Fale com a Dra. Gilcy Kelly 💊🧪</span>
+    <button class="close-bubble" onclick="fecharBubble()">❌</button>
+  </div>
+  
+  
 
-  <!-- Rodapé Fora do Formulário -->
     <footer>
-           Desenvolvido com <span class="destaque-rosa">carinho, cuidado e muito 🩷 por Sua Farmacêutica CRF-GO: 23545🌸</span>.
-           <p> Projetado por <span class="highlight">Gree Monster Project</span></p>
+      Desenvolvido com <span class="destaque-rosa">carinho, cuidado e muito 🩷 por Sua Farmacêutica CRF-GO: 23545🌸</span>.
+      <p> Projetado por <span class="highlight">Gree Monster Project</span></p>
     </footer>
-
   </div>
 
-  <!-- Swiper JS -->
-<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-<script>
-  const swiper = new Swiper('.swiper', {
-    loop: true,
-    pagination: { el: '.swiper-pagination', clickable: true },
-    navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
-  });
-</script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('.swiper', {
+      loop: true,
+      pagination: { el: '.swiper-pagination', clickable: true },
+      navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
+    });
+  </script>
+  <script>
+    const bubble = document.getElementById('whatsapp-bubble');
+const icon = document.getElementById('whatsapp-icon');
 
+function fecharBubble() {
+  bubble.style.opacity = '0';
+  bubble.style.pointerEvents = 'none';
+}
 
+// Fecha automaticamente após 90 segundos
+setTimeout(() => {
+  fecharBubble();
+}, 90000);
+
+// Reaparece ao passar o mouse no ícone
+icon.addEventListener('mouseenter', () => {
+  bubble.style.opacity = '1';
+  bubble.style.pointerEvents = 'auto';
+});
+
+  </script>
+  
+  
 </body>
 </html>
