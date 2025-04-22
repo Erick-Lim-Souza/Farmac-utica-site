@@ -1,0 +1,534 @@
+/* Estilos para o Questionário Mulher Maravilha - Tema Dark Rosa */
+
+body.dark-theme {
+  background-color: #1e1e1e;
+  color: #fff;
+  font-family: 'Arial', sans-serif;
+}
+/* Estilo para o container principal */
+.container {
+  width: 55%;
+  margin: 0 auto;
+  padding: 10px;
+  background-color: #2d2d2d;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+  text-align: center;
+  color: #f8a5c2;
+  font-size: 2.5em;
+}
+
+form {
+  margin-top: 20px;
+}
+
+fieldset {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 2px solid #f8a5c2;
+  border-radius: 8px;
+}
+
+legend {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #f8a5c2;
+}
+
+label {
+  display: block;
+  margin: 10px 0 5px;
+  font-size: 1.1em;
+}
+/* Estilo para inputs e botões */
+input[type="number"] {
+  width: 10%;
+  padding: 10px;
+  font-size: 1em;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: #333;
+  color: #fff;
+}
+/* Estilo para inputs de texto */
+input[type="text"] {
+  width: 60%;
+  padding: 10px;
+  font-size: 1em;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: #333;
+  color: #fff;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border-color: #f8a5c2;
+}
+
+button {
+  background-color: #f8a5c2;
+  color: #fff;
+  font-size: 1.2em;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #f06391;
+}
+
+footer {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 1em;
+  color: #f8a5c2;
+}
+
+/* Estilo para pagina masculina*/
+body.dark-theme-masculino {
+  background-color: #111827;
+  color: #e0f2fe;
+}
+
+body.dark-theme-masculino .container {
+  background-color: #1f2937;
+  border: 1px solid #3b82f6;
+}
+
+body.dark-theme-masculino h1,
+body.dark-theme-masculino legend,
+body.dark-theme-masculino footer {
+  color: #3b82f6;
+}
+
+body.dark-theme-masculino input[type="text"],
+body.dark-theme-masculino input[type="number"] {
+  background-color: #374151;
+  color: #e0f2fe;
+  border: 1px solid #3b82f6;
+}
+
+body.dark-theme-masculino button {
+  background-color: #3b82f6;
+}
+
+body.dark-theme-masculino button:hover {
+  background-color: #2563eb;
+}
+
+/*Portfolio*/
+body.dark-theme-portfolio {
+  background-color: #1e1e1e;
+  color: #fff;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilo para o container principal do portfólio */
+.portfolio-container {
+  width: 50%;
+  max-width: 1000px;
+    width: 55%;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: #2d2d2d;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+/* Estilo para o cabeçalho do portfólio */
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+/* Estilo para a imagem de perfil */
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #f8a5c2;
+  margin-bottom: 15px;
+}
+/* Estilo para o título do portfólio */
+h1 {
+  font-size: 2.5em;
+  color: #f8a5c2;
+}
+.portfolio-container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 100px;
+  object-fit: cover;
+  border: 3px solid #f8a5c2;
+  margin-bottom: 15px;
+}
+
+h1 {
+  font-size: 2.5em;
+  color: #f8a5c2;
+}
+
+.tagline {
+  font-style: italic;
+  color: #f1b9d4;
+  margin-bottom: 30px;
+}
+
+.about h2,
+.services h2 {
+  color: #f8a5c2;
+  margin-top: 40px;
+}
+
+
+.about h2,
+.baixe h2 {
+  color: #f8a5c2;
+  margin-top: 40px;
+}
+
+.about h2,
+.questionarios h2 {
+  color: #f8a5c2;
+  margin-top: 40px;
+}
+
+.about p {
+  font-size: 1.1em;
+  line-height: 1.6em;
+  margin: 0 10px;
+}
+
+.social-buttons {
+  margin: 30px 0;
+}
+
+.social-buttons a {
+  display: inline-block;
+  margin: 0 10px;
+  text-decoration: none;
+}
+.social-buttons a img {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s;
+}
+.social-buttons a img:hover {
+  transform: scale(1.2);
+}
+.social-buttons a img {
+  width: 40px;
+  height: 40px;
+  margin: 0 10px;
+  transition: transform 0.3s;
+}
+
+.social-buttons a img {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s;
+}
+.social-buttons a img:hover {
+  transform: scale(1.2);
+}
+.social-buttons a img {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s;
+}
+
+.social-buttons a img {
+  width: 40px;
+  height: 40px;
+  margin: 0 10px;
+  transition: transform 0.3s;
+}
+
+.social-buttons a img:hover {
+  transform: scale(1.2);
+}
+
+.btn-download {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #f8a5c2;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.btn-download:hover {
+  background-color: #f06391;
+}
+
+.btn {
+  display: inline-block;
+  margin: 10px;
+  padding: 15px 30px;
+  font-size: 1em;
+  background-color: #f8a5c2;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #f06391;
+}
+
+footer {
+  margin-top: 50px;
+  font-size: 0.9em;
+  color: #f8a5c2;
+}
+
+.destaque-rosa {
+  color: #f8a5c2; /* rosa clarinho usado no tema */
+  font-weight: bold; 
+  text-shadow: 0 0 5px #f8a5c2, 0 0 10px #f8a5c2, 0 0 15px #f06391;
+  /* sombra rosa mais escura */
+  transition: text-shadow 0.3s;
+}
+
+.destaque-rosa:hover {
+  text-shadow: 0 0 10px #f8a5c2, 0 0 20px #f8a5c2, 0 0 20px #f06391;
+}
+/* Efeito de transição suave para o hover */  
+
+.btn-voltar {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 55px;
+  height: 55px;
+  background-color: #f8a5c2; /* cor padrão rosa */
+  color: white;
+  font-size: 1.5em;
+  text-align: center;
+  line-height: 55px;
+  border-radius: 50%;
+  box-shadow: 0 0 15px #f8a5c2;
+  text-decoration: none;
+  transition: transform 0.3s, box-shadow 0.3s;
+  z-index: 999;
+}
+
+.btn-voltar:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px #f06391;
+}
+
+/* Tema azul para página masculina */
+body.dark-theme-masculino .btn-voltar {
+  background-color: #3b82f6;
+  box-shadow: 0 0 15px #3b82f6;
+}
+
+body.dark-theme-masculino .btn-voltar:hover {
+  box-shadow: 0 0 20px #2563eb;
+}
+
+ /* Cor do nome no RODAPÉ com VERDE neon */
+ .highlight {
+  color: #09f3c050;
+  font-weight: bold;
+  text-shadow: 0 0 5px #00ffc8a8, 0 0 10px #00ffc86c, 0 0 15px #00ffc8a9;
+  transition: color 0.3s, text-shadow 0.3s;
+}
+
+/* PORTFOLIO  */
+@media (max-width: 768px) {
+  .container, .portfolio-container {
+    width: 90%;
+  }
+
+  .btn-voltar {
+    right: 15px;
+    bottom: 15px;
+  }
+}
+
+/* Estiliza o slider */
+.swiper {
+  width: 100%;
+  max-width: 800px;
+  height: 300px;
+  margin: 50px auto;
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: #2d2d2d;
+  box-shadow: 0 0 15px #f8a5c2aa;
+}
+
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5em;
+  color: #fff;
+  background-color: #333;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #f8a5c2;
+}
+
+.swiper-pagination-bullet-active {
+  background: #f8a5c2;
+}
+
+/*layout lado a lado e slider*/
+body.dark-theme-portfolio {
+  background-color: #1e1e1e;
+  color: #fff;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+/* Estilo para o container principal do portfólio */
+/* SLIDER */
+.swiper {
+  width: 100%;
+  height: 300px;
+  margin-bottom: 40px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 20px #f8a5c2aa;
+}
+/* Estilo para os slides do swiper */
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5em;
+  color: #fff;
+  background-color: #333;
+}
+.swiper {
+  width: 100%;
+  max-width: 850px;
+  height: 300px;
+  margin: auto;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #f8a5c2;
+}
+
+.swiper-pagination-bullet-active {
+  background: #f8a5c2;
+}
+
+/* SOBRE MIM - LADO A LADO */
+.sobre-lado-a-lado {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.foto-lado img {
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #f8a5c2;
+  box-shadow: 0 0 15px #f8a5c2;
+}
+
+.texto-lado {
+  max-width: 550px;
+}
+
+.texto-lado h2 {
+  color: #f8a5c2;
+  font-size: 2em;
+  margin-bottom: 15px;
+}
+
+.texto-lado p {
+  font-size: 1.1em;
+  line-height: 1.6em;
+  color: #fff;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .sobre-lado-a-lado {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .texto-lado {
+    max-width: 90%;
+  }
+}
+
+/* WhatsApp flutuante */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px; /* distância do fundo */
+  right: 20px;  /* distância da lateral direita */
+  z-index: 999; /* garante que fique por cima */
+}
+
+.whatsapp-float img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease;
+}
+
+.whatsapp-float img:hover {
+  transform: scale(1.1);
+}
+
+/* Colocar serviços a esquerda*/
+.services {
+  text-align: left;
+  margin-left: 0;
+  padding-left: 20px; /* opcional, só pra dar um respiro */
+  align-self: flex-start;
+}
+
+/* Botão de Limpar Cor*/
+button[type="reset"] {
+  background-color: #d40000;
+  color: #fff;
+  margin-left: 10px;
+}
+
+button[type="reset"]:hover {
+  background-color: #f31313;
+}

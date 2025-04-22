@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Questionário do Maridão Monstro 💙</title>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body class="dark-theme-masculino">
+  <div class="container">
+    <h1>Questionário do Maridão Monstro 💙</h1>
+    <form id="formulario">
+
+      <fieldset>
+        <legend>1. Informações Pessoais📄</legend>
+        <label for="name">Informe seu nome completo:</label>
+        <input type="text" name="informeSeuNomeCompleto">
+
+        <label for="idade">Qual sua idade?</label>
+        <input type="number" name="idade" id="idade">
+        
+
+        <label>Peso (kg):</label>
+        <input type="number" name="peso">
+
+        <label>Altura (cm):</label>
+        <input type="number" name="altura">
+      </fieldset>
+
+
+
+      <button type="button" onclick="gerarPDF()">🧾PDF</button>
+      <button type="reset">🧹Limpar</button>
+      <button type="submit">✔︎Enviar</button>
+    </fieldset>
+    </form>
+    <footer>
+           Desenvolvido com <span class="destaque-rosa">carinho, cuidado e muito 🩷 por Sua Farmacêutica CRF-GO: 23545🌸</span>.
+           <p> Projetado por <span class="highlight">Gree Monster Project</span></p>
+    </footer>
+
+  <script src="js/script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script> 
+
+  <a href="index.html" class="btn-voltar" title="Voltar para o início">🏠</a>
+</body>
+</html>

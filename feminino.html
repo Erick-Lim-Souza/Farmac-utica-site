@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Questionário Mulher Maravilha 🩷</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="dark-theme">
+  <div class="container">
+    <h1>Questionário Mulher Maravilha<span class="destaque-rosa">🩷</span></h1>
+    <form id="formulario">
+
+      <fieldset>
+        <legend>1. Informações Pessoais📄</legend>
+        <label for="name">Informe seu nome completo:</label>
+        <input type="text" name="informeSeuNomeCompleto">
+
+        <label for="idade">Qual sua idade?</label>
+        <input type="number" name="idade" id="idade">        
+
+        <label>Qual seu peso atual (kg)?</label>
+        <input type="number" name="peso">
+
+        <label>Qual sua altura (cm)?</label>
+        <input type="number" name="altura">
+      </fieldset>
+
+      <fieldset>
+        <legend>2. Rotina de Treino💪🏾</legend>
+        <label>Com que frequência você treina?</label>
+        <input type="number" name="frequenciaTreino">
+
+        <label>Tipo de treino?</label>
+        <input type="text" name="tipoTreino">
+
+        <label>Você sente disposição para treinar?</label>
+        <input type="radio" name="disposicao" value="Sim" required> Sim
+        <input type="radio" name="disposicao" value="Não" required> Não
+      </fieldset>
+
+      <fieldset>
+        <legend>3. Alimentação🥦</legend>
+        <label>Segue alguma dieta específica?</label>
+<!-- Dieta -->
+<input type="radio" name="dieta" value="Sim" required> Sim
+<input type="radio" name="dieta" value="Não" required> Não
+<input type="text" name="detalheDieta" id="detalheDieta" placeholder="Se sim, qual?" style="display:none;">
+
+
+        <label>Consumo de água diário:</label>
+        <input type="number" name="agua">
+      </fieldset>
+
+      <fieldset>
+        <legend>4. Sono e Estresse💤</legend>
+        <label>Quantas horas você dorme por noite?</label>
+        <input type="number" name="sono">
+
+        <label>Sente-se estressada frequentemente?</label>
+        <input type="radio" name="estresse" value="Sim" required> Sim
+        <input type="radio" name="estresse" value="Não" required> Não
+      </fieldset>
+
+      <fieldset>
+        <legend>5. Ciclo e Hormônios🌀</legend>
+        <label>Seu ciclo menstrual é regular?</label>
+        <input type="radio" name="ciclo" value="Sim" required> Sim
+        <input type="radio" name="ciclo" value="Não" required> Não
+
+        <label>Usa anticoncepcional?</label>
+        <input type="radio" name="anticoncepcional" value="Sim" required> Sim
+        <input type="radio" name="anticoncepcional" value="Não" required> Não
+      </fieldset>
+
+      <fieldset>
+        <legend>6. Libido e Vida Sexual👩🏾‍❤️‍💋‍👨🏾</legend>
+        <label>Você tem interesse em sexo?</label>
+        <input type="radio" name="interesseSexo" value="Sim" required> Sim
+        <input type="radio" name="interesseSexo" value="Não" required> Não 
+        <input type="text" name="detalheInteresseSexo" id="detalheInteresseSexo" placeholder="Se Não, como?" style="display:none;">
+        <label>Sente desconforto ou dor nas relações?</label>
+        <input type="radio" name="desconforto" value="Sim" required> Sim
+        <input type="radio" name="desconforto" value="Não" required> Não
+      </fieldset>
+
+      <fieldset>
+        <legend>7. Saúde Geral👩🏾‍⚕️</legend>
+        <label>Usa alguma medicação contínua?</label>
+        <input type="radio" name="medicacao" value="Sim" required> Sim
+        <input type="radio" name="medicacao" value="Não" required> Não
+        <input type="text" name="detalheMedicacao" id="detalheMedicacao" placeholder="Se sim, qual?" style="display:none;">
+        <label>Já fez alguma cirurgia?</label>
+        <input type="radio" name="cirurgia" value="Sim" required> Sim 
+        <input type="radio" name="cirurgia" value="Não" required> Não
+        <input type="text" name="detalheCirurgia" id="detalheCirurgia" placeholder="Se sim, qual?" style="display:none;">
+        <label>Já teve alguma doença crônica?</label>
+        <input type="radio" name="doencaCronica" value="Sim" required> Sim
+        <input type="radio" name="doencaCronica" value="Não" required> Não
+        <input type="text" name="detalheDoencaCronica" id="detalheDoencaCronica" placeholder="Se sim, qual?" style="display:none;">
+        <label>Já teve alguma doença autoimune?</label>
+        <input type="radio" name="doencaAutoimune" value="Sim" required> Sim
+        <input type="radio" name="doencaAutoimune" value="Não" required> Não
+        <input type="text" name="detalheDoencaAutoimune" id="detalheDoencaAutoimune" placeholder="Se sim, qual?" style="display:none;">
+        <label>Já teve alguma doença infecciosa?</label>
+        <input type="radio" name="doencaInfecciosa" value="Sim" required> Sim 
+        <input type="radio" name="doencaInfecciosa" value="Não" required> Não
+        <input type="text" name="detalheDoencaInfecciosa" id="detalheDoencaInfecciosa" placeholder="Se sim, qual?" style="display:none;">
+    
+
+        <label>Sente cansaço frequente?</label>
+        <input type="radio" name="cansaco" value="Sim" required> Sim
+        <input type="radio" name="cansaco" value="Não" required> Não
+
+        
+        <label>Tem alergias ou intolerâncias?</label>
+        <input type="radio" name="alergias" value="Sim" required> Sim
+        <input type="radio" name="alergias" value="Não" required> Não 
+        <input type="text" name="detalheAlergias" id="detalheAlergias" placeholder="Se sim, quais?" style="display:none;">
+      </fieldset>
+
+      <button type="button" onclick="gerarPDF()">🧾PDF</button>
+      <button type="reset">🧹Limpar</button>
+      <button type="submit">✔︎Enviar</button>
+    </fieldset>
+    </form>
+    <footer>
+         Desenvolvido com <span class="destaque-rosa">carinho, cuidado e muito 🩷 por Sua Farmacêutica CRF-GO: 23545🌸</span>.
+         <p> Projetado por <span class="highlight">Gree Monster Project</span></p>
+  </footer>
+
+  <script src="js/script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script> 
+
+  <a href="index.html" class="btn-voltar" title="Voltar para o início">🏠</a>
+
+</body>
+</html>
