@@ -133,3 +133,13 @@ function getSecaoDoCampo(nome) {
   if (["queda", "barba", "calvicie", "couro", "bone"].includes(nome)) return "8. Cabelo e Barba";
   return "Outros";
 }
+
+// Adicione no seu script.js
+document.getElementById('name').addEventListener('blur', function() {
+  const nome = this.value.trim();
+  if (nome.split(' ').length < 2) {
+    alert('Por favor, insira nome e sobrenome');
+    this.focus();
+  }
+});
+
