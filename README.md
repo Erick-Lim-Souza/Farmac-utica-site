@@ -76,6 +76,7 @@ Este é um projeto web criado para auxiliar a coleta de dados personalizados par
 
 # 📦 Estrutura do projeto: questionarios-funcionais
 
+`
 questionarios-funcionais/
 ├── index.html             # Página principal com apresentação e links
 ├── feminino.html          # Formulário Mulher Maravilha 🩷
@@ -89,6 +90,7 @@ questionarios-funcionais/
 │   ├── foto2.png
 │   ├── ...                # Outras imagens
 └── curriculo.pdf          # Currículo para download
+`
 ## 🚀 Como Usar
 
 # 1. Clone o repositório
