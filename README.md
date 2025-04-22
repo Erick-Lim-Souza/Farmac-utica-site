@@ -16,6 +16,55 @@ Este é um projeto web criado para auxiliar a coleta de dados personalizados par
 - 📷 **Slider de imagens** na página inicial para identidade visual.
 - 📄 **Download do currículo** diretamente pela interface.
 
+# ==========================================
+# MELHORIAS ADICIONADAS AO SITE
+# ==========================================
+
+# ✅ 1. Integração com WhatsApp
+# - Adicionado link direto com redirecionamento para WhatsApp
+# - Permite envio rápido das informações para a farmacêutica ou para o próprio paciente
+
+# ✅ 2. Geração de PDF
+# - Implementado botão 🧾 que gera um PDF com todas as respostas do formulário
+# - Utiliza a biblioteca jsPDF via CDN
+
+# ✅ 3. Envio automático para Planilha do Google
+# - Integração via Google Apps Script
+# - Armazena todas as respostas de forma organizada na nuvem
+# - Ideal para acompanhamento de evolução clínica
+
+# ✅ 4. Campos dinâmicos (Exibição condicional)
+# - Exibe automaticamente campos extras quando o usuário marca "Sim"
+#   Ex: Se "Sim" para medicamentos → aparece campo "Quais medicamentos?"
+
+# ✅ 5. Botões personalizados
+# - Botão de PDF, botão de limpar formulário e botão de envio com ícones
+# - Tornam a experiência mais intuitiva e visualmente agradável
+
+# ✅ 6. Layout moderno com tema Dark Azul
+# - Aplicado visual personalizado masculino (dark com tons azulados)
+# - Melhor leitura e visual clean
+
+# ✅ 7. Footer com identidade profissional
+# - Assinatura: “Desenvolvido com carinho pela Farmacêutica CRF-GO: 23545”
+# - Branding do projeto: "Gree Monster Project"
+
+# ✅ 8. Preparado para gerar relatório clínico
+# - Com todas as seções necessárias: treino, sono, alimentação, saúde, barba/cabelo, estresse etc.
+# - Ideal para criar planos de cuidado farmacêutico
+
+# ✅ 9. Organização por Fieldsets com ícones e emojis
+# - Divisão temática deixa o questionário mais leve, divertido e fácil de responder
+
+# ✅ 10. Acessibilidade e responsividade
+# - Compatível com celular, tablet e desktop
+# - Labels e placeholders claros para guiar o preenchimento
+
+# ==========================================
+# Essas funcionalidades elevaram o site a nível profissional 👨🏽‍⚕️💻
+# Pronto para ser usado em atendimentos reais e acompanhamento de pacientes
+# ==========================================
+
 ## 🔧 Tecnologias Utilizadas
 
 - HTML5
