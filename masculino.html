@@ -15,7 +15,7 @@
         <legend>1. Informações Pessoais📄</legend>
         <label for="name">Informe seu nome completo:</label>
         <input type="text" name="informeSeuNomeCompleto">
-
+        
         <label for="idade">Qual sua idade?</label>
         <input type="number" name="idade" id="idade">
         
@@ -27,7 +27,114 @@
         <input type="number" name="altura">
       </fieldset>
 
+      <fieldset>
+        <legend>2. Rotina de Treino💪🏾</legend>
+        <label>Quantos dias por semana você treina?</label>
+        <input type="number" name="frequenciaTreino">
 
+        <label>Treino é musculação, cardio ou os dois?</label>
+        <input type="text" name="tipoTreino">
+
+        <label>Duração média do treino:</label>
+        <input type="number" name="duracaoTreino">
+
+        <label>Horário mais comum do treino:</label>
+        <input type="text" name="horarioTreino">
+
+        <label>Sente muito cansaço após o treino?</label>
+        <input type="radio" name="cansacoTreino" value="Sim" required> Sim
+        <input type="radio" name="cansacoTreino" value="Não" required> Não
+      </fieldset>
+
+      <fieldset>
+        <legend>3. Alimentação🍽️</legend>
+        <label>Segue alguma dieta?</label>
+<!-- Dieta -->
+<input type="radio" name="dieta" value="Sim" required> Sim
+<input type="radio" name="dieta" value="Não" required> Não
+<input type="text" name="detalheDieta" id="detalheDieta" placeholder="Se sim, qual?" style="display:none;">
+
+
+        <label>Consome proteína suficiente?</label>
+        <input type="radio" name="proteina" value="Sim" required> Sim
+        <input type="radio" name="proteina" value="Não" required> Não
+
+        <label>Consumo de água diário (litros):</label>
+        <input type="number" name="agua">
+
+        <label>Tem compulsão por doce/salgado?</label>
+        <input type="radio" name="compulsao" value="Sim" required> Sim
+        <input type="radio" name="compulsao" value="Não" required> Não
+
+        <label>Costuma pular refeições?</label>
+        <input type="radio" name="pularRefeicoes" value="Sim" required> Sim
+        <input type="radio" name="pularRefeicoes" value="Não" required> Não
+      </fieldset>
+
+      <fieldset>
+        <legend>4. Sono e Estresse🧠</legend>
+        <label>Horas de sono por noite:</label>
+        <input type="number" name="sono">
+
+        <label>Acorda descansado?</label>
+        <input type="radio" name="descanso" value="Sim" required> Sim
+        <input type="radio" name="descanso" value="Não" required> Não
+
+        <label>Tem insônia, ronco ou sono agitado?</label>
+        <input type="radio" name="sonoAgitado" value="Sim" required> Sim
+        <input type="radio" name="sonoAgitado" value="Não" required> Não
+
+        <label>Está estressado no dia a dia?</label>
+        <input type="radio" name="estresse" value="Sim" required> Sim
+        <input type="radio" name="estresse" value="Não" required> Não
+      </fieldset>
+
+      <fieldset>
+        <legend>5. Saúde Geral🩺</legend>
+        <label>Usa medicação contínua?</label>
+        <input type="radio" name="medicacao" value="Sim" required> Sim
+        <input type="radio" name="medicacao" value="Não" required> Não
+        <input type="text" name="detalheMedicacao" id="detalheMedicacao" placeholder="Se sim, qual?" style="display:none;">
+
+        <label>Tem pressão alta, diabetes, ou questões hormonais?</label>
+        <input type="radio" name="doencas" value="Sim" required> Sim
+        <input type="radio" name="doencas" value="Não" required> Não
+        <input type="text" name="detalheDoencas" id="detalheDoencas" placeholder="Se sim, quais?" style="display:none;">
+
+        <label>Fez exames recentes? Algo fora do normal?</label>
+        <input type="radio" name="exames" value="Sim" required> Sim
+        <input type="radio" name="exames" value="Não" required> Não
+        <input type="text" name="detalheExames" id="detalheExames" placeholder="Se sim, quais?" style="display:none;">  
+
+        <label>Está acima do peso ou com gordura abdominal?</label>
+        <input type="radio" name="gordura" value="Sim" required> Sim
+        <input type="radio" name="gordura" value="Não" required> Não
+
+        <label>Tem alergias ou intolerâncias?</label>
+        <input type="radio" name="alergias" value="Sim" required> Sim
+        <input type="radio" name="alergias" value="Não" required> Não 
+        <input type="text" name="detalheAlergias" id="detalheAlergias" placeholder="Se sim, quais?" style="display:none;">
+      </fieldset>
+
+      <fieldset>
+        <legend>6. Cabelo e Barba🧔🏽</legend>
+        <label>Queda localizada ou generalizada?</label>
+        <input type="text" name="queda">
+
+        <label>A barba cresce bem ou é falhada?</label>
+        <input type="text" name="barba">
+
+        <label>Já foi diagnosticado com calvície?</label>
+        <input type="radio" name="calvicie" value="Sim" required> Sim
+        <input type="radio" name="calvicie" value="Não" required> Não
+
+        <label>Couro cabeludo é oleoso, seco ou com caspa?</label>
+        <input type="text" name="couro">
+
+        <label>Usa boné com frequência?</label>
+        <input type="radio" name="bone" value="Sim" required> Sim
+        <input type="radio" name="bone" value="Não" required> Não
+      </fieldset>
 
       <button type="button" onclick="gerarPDF()">🧾PDF</button>
       <button type="reset">🧹Limpar</button>
