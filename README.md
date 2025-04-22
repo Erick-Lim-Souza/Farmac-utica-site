@@ -2,6 +2,10 @@
 
 Este é um projeto web criado para auxiliar a coleta de dados personalizados para atendimento funcional da Dra. Gilcy Kelly dos Santos Rodrigues. Com formulários específicos para homens e mulheres, a ferramenta permite gerar PDFs e enviar respostas para uma planilha Google automaticamente.
 
+
+🔗 **Projeto no ar:**  
+👉 [Acesse aqui](https://dragilcykellyfarmaceutica.netlify.app/)
+
 ## 💡 Funcionalidades
 
 - 📋 **Formulários personalizados**: Questionários específicos para público masculino ("Maridão Monstro 💙") e feminino ("Mulher Maravilha 🩷").
@@ -61,7 +65,7 @@ open index.html           # (macOS)
 
 ## 👨‍💻 Autor
 
-Feito com 💚 + ☕ + 🥄 whey por  
+Feito com 💚 + ☕
 **Erick Souza – Gree Monster Project**
 
 - [Meu GitHub](https://github.com/Erick-Lim-Souza)
@@ -79,4 +83,7 @@ Se curtir, dá uma estrela ⭐ no repositório!
 ## 📄 Licença
 
 Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+
+
+![image](https://github.com/user-attachments/assets/86e8d6e3-1a31-449b-abc5-c94b53330540)
 
