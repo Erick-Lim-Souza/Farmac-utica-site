@@ -1,3 +1,4 @@
+<!-- feminino.html atualizado com acessibilidade, id nos campos e idade tipo date -->
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -13,126 +14,205 @@
 
       <fieldset>
         <legend>1. Informações Pessoais📄</legend>
-        <label for="name">Informe seu nome completo:</label>
-        <input type="text" name="informeSeuNomeCompleto">
+        <label for="name">Nome completo:</label>
+        <div class="radio-inline">
+          <input type="text" name="informeSeuNomeCompleto" id="name" placeholder="Ex: Maria da Silva" required minlength="5" maxlength="100">
+        </div>
 
-        <label for="idade">Qual sua idade?</label>
-        <input type="number" name="idade" id="idade">        
+        <div class="radio-inline">
+          <label for="idade">Data de aniversario</label>
+          <input type="date" name="idade" id="idade">
+        </div>
 
-        <label>Qual seu peso atual (kg)?</label>
-        <input type="number" name="peso">
 
-        <label>Qual sua altura (cm)?</label>
-        <input type="number" name="altura">
+        <div class="radio-inline">
+          <label for="peso">Qual seu peso atual (kg)?</label>
+          <input type="number" name="peso" id="peso">
+        </div>
+
+
+        <div class="radio-inline">
+          <label for="altura">Qual sua altura (cm)?</label>
+          <input type="number" name="altura" id="altura">
+        </div>
+
       </fieldset>
 
       <fieldset>
         <legend>2. Rotina de Treino💪🏾</legend>
-        <label>Com que frequência você treina?</label>
-        <input type="number" name="frequenciaTreino">
-
-        <label>Tipo de treino?</label>
-        <input type="text" name="tipoTreino">
-
+        <label for="frequenciaTreino">Quantos dias por semana você treina?</label>
+        <div class="radio-inline">
+          <input type="number" name="frequenciaTreino" id="frequenciaTreino">
+        </div>
+        
+        <div class="radio-inline"></div>
+        <label for="tipoTreino">Tipo de treino? (Objetivo.)</label>
+        <div class="radio-inline">
+          <input type="radio" name="tipoTreino1" id="tipoTreino1" placeholder="Emagrecimento" required> <label for="tipoTreino1">Emagrecimento</label>
+          <input type="radio" name="tipoTreino2" id="tipoTreino2" placeholder="Musculação" required> <label for="tipoTreino2">Musculação</label>   
+          <input type="radio" name="tipoTreino3" id="tipoTreino3" placeholder="Hipertrofia" required> <label for="tipoTreino3">Hipertrofia</label>
+          <input type="radio" name="tipoTreino4" id="tipoTreino4" placeholder="Definição" required> <label for="tipoTreino4">Definição</label>
+        </div>
+        <div class="radio-inline">
+          <input type="radio" name="tipoTreino5" id="tipoTreino5" placeholder="Resistência" required> <label for="tipoTreino5">Resistência</label>
+          <input type="radio" name="tipoTreino6" id="tipoTreino6" placeholder="Força" required> <label for="tipoTreino6">Força</label>
+          <input type="radio" name="tipoTreino7" id="tipoTreino7" placeholder="Cardio" required> <label for="tipoTreino7">Cardio</label>
+          <input type="radio" name="tipoTreino8" id="tipoTreino8" placeholder="HIIT" required> <label for="tipoTreino8">HIIT</label>
+          <input type="radio" name="tipoTreino9" id="tipoTreino9" placeholder="Crossfit" required> <label for="tipoTreino9">Crossfit</label>
+        </div>
         <label>Você sente disposição para treinar?</label>
-        <input type="radio" name="disposicao" value="Sim" required> Sim
-        <input type="radio" name="disposicao" value="Não" required> Não
+        <div class="radio-inline">
+          <input type="radio" name="disposicao" id="dispSim" value="Sim" required> <label for="dispSim">Sim</label>
+          <input type="radio" name="disposicao" id="dispNao" value="Não" required> <label for="dispNao">Não</label>
+        </div>
+
+        <label for="duracaoTreino">Duração média do treino (minutos):</label>
+        <input type="number" name="duracaoTreino" id="duracaoTreino">
+        
+        <label for="horarioTreino">Horário mais comum do treino:</label>
+        <input type="text" name="horarioTreino" id="horarioTreino">
+
+        <label>Sente muito cansaço após o treino?</label>
+        <div class="radio-inline">
+          <input type="radio" name="cansacoTreino" id="cansacoSim" value="Sim" required> <label for="cansacoSim">Sim</label>
+          <input type="radio" name="cansacoTreino" id="cansacoNao" value="Não" required> <label for="cansacoNao">Não</label>
+
       </fieldset>
 
       <fieldset>
         <legend>3. Alimentação🥦</legend>
         <label>Segue alguma dieta específica?</label>
-<!-- Dieta -->
-<input type="radio" name="dieta" value="Sim" required> Sim
-<input type="radio" name="dieta" value="Não" required> Não
-<input type="text" name="detalheDieta" id="detalheDieta" placeholder="Se sim, qual?" style="display:none;">
+        <div class="radio-inline">
+          <input type="radio" name="dieta" id="dietaSim" value="Sim" required> <label for="dietaSim">Sim</label>
+          <input type="radio" name="dieta" id="dietaNao" value="Não" required> <label for="dietaNao">Não</label>
+          <input type="text" name="detalheDieta" id="detalheDieta" placeholder="Se sim, qual?" style="display:none;">
+        </div>
 
 
-        <label>Consumo de água diário:</label>
-        <input type="number" name="agua">
+        <label for="agua">Consumo de água diário:</label>
+        <input type="number" name="agua" id="agua">
       </fieldset>
 
       <fieldset>
         <legend>4. Sono e Estresse💤</legend>
-        <label>Quantas horas você dorme por noite?</label>
-        <input type="number" name="sono">
+        <label for="sono">Quantas horas você dorme por noite?</label>
+        <input type="number" name="sono" id="sono">
 
         <label>Sente-se estressada frequentemente?</label>
-        <input type="radio" name="estresse" value="Sim" required> Sim
-        <input type="radio" name="estresse" value="Não" required> Não
+        <div class="radio-inline">
+          <input type="radio" name="estresse" id="estresseSim" value="Sim" required> <label for="estresseSim">Sim</label>
+          <input type="radio" name="estresse" id="estresseNao" value="Não" required> <label for="estresseNao">Não</label>
+        </div>
+
       </fieldset>
 
       <fieldset>
         <legend>5. Ciclo e Hormônios🌀</legend>
         <label>Seu ciclo menstrual é regular?</label>
-        <input type="radio" name="ciclo" value="Sim" required> Sim
-        <input type="radio" name="ciclo" value="Não" required> Não
+        <div class="radio-inline">
+          <input type="radio" name="ciclo" id="cicloSim" value="Sim" required> <label for="cicloSim">Sim</label>
+          <input type="radio" name="ciclo" id="cicloNao" value="Não" required> <label for="cicloNao">Não</label>
+        </div>
+
 
         <label>Usa anticoncepcional?</label>
-        <input type="radio" name="anticoncepcional" value="Sim" required> Sim
-        <input type="radio" name="anticoncepcional" value="Não" required> Não
+        <div class="radio-inline">
+          <input type="radio" name="anticoncepcional" id="antiSim" value="Sim" required> <label for="antiSim">Sim</label>
+          <input type="radio" name="anticoncepcional" id="antiNao" value="Não" required> <label for="antiNao">Não</label>
+        </div>
+
       </fieldset>
 
       <fieldset>
         <legend>6. Libido e Vida Sexual👩🏾‍❤️‍💋‍👨🏾</legend>
         <label>Você tem interesse em sexo?</label>
-        <input type="radio" name="interesseSexo" value="Sim" required> Sim
-        <input type="radio" name="interesseSexo" value="Não" required> Não 
-        <input type="text" name="detalheInteresseSexo" id="detalheInteresseSexo" placeholder="Se Não, como?" style="display:none;">
+        <div class="radio-inline">
+          <input type="radio" name="interesseSexo" id="interesseSim" value="Sim" required> <label for="interesseSim">Sim</label>
+          <input type="radio" name="interesseSexo" id="interesseNao" value="Não" required> <label for="interesseNao">Não</label>
+          <input type="text" name="detalheInteresseSexo" id="detalheInteresseSexo" placeholder="Se Não, como?" style="display:none;">
+        </div>
+
+
         <label>Sente desconforto ou dor nas relações?</label>
-        <input type="radio" name="desconforto" value="Sim" required> Sim
-        <input type="radio" name="desconforto" value="Não" required> Não
+        <div class="radio-inline">
+          <input type="radio" name="desconforto" id="desconfortoSim" value="Sim" required> <label for="desconfortoSim">Sim</label>
+          <input type="radio" name="desconforto" id="desconfortoNao" value="Não" required> <label for="desconfortoNao">Não</label>
+        </div>
+
       </fieldset>
 
       <fieldset>
         <legend>7. Saúde Geral👩🏾‍⚕️</legend>
         <label>Usa alguma medicação contínua?</label>
-        <input type="radio" name="medicacao" value="Sim" required> Sim
-        <input type="radio" name="medicacao" value="Não" required> Não
-        <input type="text" name="detalheMedicacao" id="detalheMedicacao" placeholder="Se sim, qual?" style="display:none;">
+        <div class="radio-inline">
+          <input type="radio" name="medicacao" id="medSim" value="Sim" required> <label for="medSim">Sim</label>
+          <input type="radio" name="medicacao" id="medNao" value="Não" required> <label for="medNao">Não</label>
+          <input type="text" name="detalheMedicacao" id="detalheMedicacao" placeholder="Se sim, qual?" style="display:none;">
+        </div>
+
         <label>Já fez alguma cirurgia?</label>
-        <input type="radio" name="cirurgia" value="Sim" required> Sim 
-        <input type="radio" name="cirurgia" value="Não" required> Não
-        <input type="text" name="detalheCirurgia" id="detalheCirurgia" placeholder="Se sim, qual?" style="display:none;">
+        <div class="radio-inline">
+          <input type="radio" name="cirurgia" id="cirSim" value="Sim" required> <label for="cirSim">Sim</label>
+          <input type="radio" name="cirurgia" id="cirNao" value="Não" required> <label for="cirNao">Não</label>
+          <input type="text" name="detalheCirurgia" id="detalheCirurgia" placeholder="Se sim, qual?" style="display:none;">
+        </div>
+        
         <label>Já teve alguma doença crônica?</label>
-        <input type="radio" name="doencaCronica" value="Sim" required> Sim
-        <input type="radio" name="doencaCronica" value="Não" required> Não
-        <input type="text" name="detalheDoencaCronica" id="detalheDoencaCronica" placeholder="Se sim, qual?" style="display:none;">
+        <div class="radio-inline">
+          <input type="radio" name="doencaCronica" id="cronicaSim" value="Sim" required> <label for="cronicaSim">Sim</label>
+          <input type="radio" name="doencaCronica" id="cronicaNao" value="Não" required> <label for="cronicaNao">Não</label>
+          <input type="text" name="detalheDoencaCronica" id="detalheDoencaCronica" placeholder="Se sim, qual?" style="display:none;">
+        </div>
+        
         <label>Já teve alguma doença autoimune?</label>
-        <input type="radio" name="doencaAutoimune" value="Sim" required> Sim
-        <input type="radio" name="doencaAutoimune" value="Não" required> Não
-        <input type="text" name="detalheDoencaAutoimune" id="detalheDoencaAutoimune" placeholder="Se sim, qual?" style="display:none;">
+        <div class="radio-inline">
+          <input type="radio" name="doencaAutoimune" id="autoimuneSim" value="Sim" required> <label for="autoimuneSim">Sim</label>
+          <input type="radio" name="doencaAutoimune" id="autoimuneNao" value="Não" required> <label for="autoimuneNao">Não</label>
+          <input type="text" name="detalheDoencaAutoimune" id="detalheDoencaAutoimune" placeholder="Se sim, qual?" style="display:none;">
+  
+        </div>
+
         <label>Já teve alguma doença infecciosa?</label>
-        <input type="radio" name="doencaInfecciosa" value="Sim" required> Sim 
-        <input type="radio" name="doencaInfecciosa" value="Não" required> Não
-        <input type="text" name="detalheDoencaInfecciosa" id="detalheDoencaInfecciosa" placeholder="Se sim, qual?" style="display:none;">
-    
+        <div class="radio-inline">
+          <input type="radio" name="doencaInfecciosa" id="infecciosaSim" value="Sim" required> <label for="infecciosaSim">Sim</label>
+          <input type="radio" name="doencaInfecciosa" id="infecciosaNao" value="Não" required> <label for="infecciosaNao">Não</label>
+          <input type="text" name="detalheDoencaInfecciosa" id="detalheDoencaInfecciosa" placeholder="Se sim, qual?" style="display:none;">
+  
+        </div>
 
         <label>Sente cansaço frequente?</label>
-        <input type="radio" name="cansaco" value="Sim" required> Sim
-        <input type="radio" name="cansaco" value="Não" required> Não
+        <div class="radio-inline">
+          <input type="radio" name="cansaco" id="cansacoSim" value="Sim" required> <label for="cansacoSim">Sim</label>
+          <input type="radio" name="cansaco" id="cansacoNao" value="Não" required> <label for="cansacoNao">Não</label>
+  
+        </div>
 
-        
         <label>Tem alergias ou intolerâncias?</label>
-        <input type="radio" name="alergias" value="Sim" required> Sim
-        <input type="radio" name="alergias" value="Não" required> Não 
-        <input type="text" name="detalheAlergias" id="detalheAlergias" placeholder="Se sim, quais?" style="display:none;">
+        <div class="radio-inline">
+          <input type="radio" name="alergias" id="alergiaSim" value="Sim" required> <label for="alergiaSim">Sim</label>
+          <input type="radio" name="alergias" id="alergiaNao" value="Não" required> <label for="alergiaNao">Não</label>
+          <input type="text" name="detalheAlergias" id="detalheAlergias" placeholder="Se sim, quais?" style="display:none;">
+        </div>
+         
+        
+
       </fieldset>
 
       <button type="button" onclick="gerarPDF()">🧾PDF</button>
       <button type="reset">🧹Limpar</button>
       <button type="submit">✔︎Enviar</button>
-    </fieldset>
     </form>
+
     <footer>
-         Desenvolvido com <span class="destaque-rosa">carinho, cuidado e muito 🩷 por Sua Farmacêutica CRF-GO: 23545🌸</span>.
-         <p> Projetado por <span class="highlight">Gree Monster Project</span></p>
-  </footer>
+      <h2>Contato</h2>
+      Desenvolvido com <span class="destaque-rosa">carinho, cuidado e muito 🩷 por Sua Farmacêutica CRF-GO: 23545🌸</span>.
+      <p> Projetado por <span class="highlight">Gree Monster Project</span></p>
+    </footer>
 
-  <script src="js/script.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script> 
+    <a href="index.html" class="btn-voltar" title="Voltar para o início">🏠</a>
 
-  <a href="index.html" class="btn-voltar" title="Voltar para o início">🏠</a>
-
+    <script src="js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script> 
+  </div>
 </body>
 </html>
